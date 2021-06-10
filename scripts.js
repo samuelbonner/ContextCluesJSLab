@@ -13,14 +13,14 @@ document.addEventListener('DOMContentLoaded', function () {
         accusationH3.id = (i);
 
         accusationH3.addEventListener('click', function () {
-            randomAlert(i);
+            clickAlert(i);
         })
 
         document.getElementById("accusationHeaders").appendChild(accusationH3);
     }
 })
 
-    function randomAlert(e) {
+    function clickAlert(e) {
             var friend = e % friends.length;
             console.log("Friend # " + friend);
             var location = e % locations.length;
